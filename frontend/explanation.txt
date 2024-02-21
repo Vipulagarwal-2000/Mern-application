@@ -1,0 +1,13 @@
+//User npm install --save react-router-dom@5 --save-exact
+
+npm install: This command is used to install Node.js packages (in this case, the react-router-dom package).
+
+--save: This flag is used to update the dependencies section of your package.json file with the installed package and its version.
+
+react-router-dom@5: This specifies that you want to install version 5 of the react-router-dom package.
+
+--save-exact: This flag ensures that the exact version you specified (in this case, version 5) is saved in your package.json file, 
+preventing npm from using newer versions that might be available in the future.
+
+routing to manage routing is react spa application
+
