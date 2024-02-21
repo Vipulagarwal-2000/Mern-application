@@ -11,3 +11,7 @@ preventing npm from using newer versions that might be available in the future.
 
 routing to manage routing is react spa application
 
+
+
+router parse from top to bottom so have switch to switch to the url when it found the appropriate one.
+redirect will redirect to the homepage in case it dose not found a matching route
