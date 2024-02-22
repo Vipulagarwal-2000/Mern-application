@@ -15,3 +15,9 @@ routing to manage routing is react spa application
 
 router parse from top to bottom so have switch to switch to the url when it found the appropriate one.
 redirect will redirect to the homepage in case it dose not found a matching route
+
+
+dumb components has no logic they are presentational
+
+stateful component has state and lifestyle. they are logical in nature
+
