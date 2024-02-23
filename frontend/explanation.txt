@@ -21,3 +21,57 @@ dumb components has no logic they are presentational
 
 stateful component has state and lifestyle. they are logical in nature
 
+
+
+
+Yes, it's common in a React application to have a single `BrowserRouter` or `HashRouter` wrapping the entire application. This is often done in the root component of your application (e.g., in your `index.js` or `App.js` file). This way, the router can manage the application's navigation globally.
+
+Here's a simple example:
+
+```jsx
+// index.js or App.js
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import App from './App';
+
+ReactDOM.render(
+  <Router>
+    <App />
+  </Router>,
+  document.getElementById('root')
+);
+```
+
+In this example, the `Router` component wraps the `App` component, making the routing context available throughout the entire application.
+
+Inside your `App` component or any other component within your application, you can use `Route`, `Switch`, `Link`, and other React Router DOM components to define your Single Page Application (SPA) navigation.
+
+```jsx
+// App.js
+
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import Home from './Home';
+import About from './About';
+import Contact from './Contact';
+
+const App = () => {
+  return (
+    <div>
+      {/* Navigation Links can be placed here if desired */}
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
+      </Switch>
+    </div>
+  );
+};
+
+export default App;
+```
+
+This is a common pattern for managing routes in a React SPA, and it allows you to keep the overall structure of your routing centralized.
+

@@ -1,0 +1,36 @@
+In React Router DOM, `NavLink` is a component that provides a way to create navigation links in your application. It is a special version of the `Link` component with additional styling capabilities for indicating the "active" or "selected" state of the link.
+
+Here's a basic example of how you can use `NavLink` in React Router DOM:
+
+```jsx
+import { NavLink } from 'react-router-dom';
+
+const Navigation = () => {
+  return (
+    <nav>
+      <NavLink to="/" exact activeClassName="active">
+        Home
+      </NavLink>
+      <NavLink to="/about" activeClassName="active">
+        About
+      </NavLink>
+      <NavLink to="/contact" activeClassName="active">
+        Contact
+      </NavLink>
+    </nav>
+  );
+};
+```
+
+In this example:
+
+- `to` specifies the path the link should navigate to.
+- `exact` is an optional prop that ensures the link is only considered active when the current route exactly matches the `to` prop.
+- `activeClassName` is a class name that will be applied to the link when it is active, allowing you to apply specific styles to active links.
+
+By using `NavLink`, you can easily create navigation links that have different styles when they are active, making it clear to the user which part of the application they are currently viewing.
+
+The activeClassName prop in React Router DOM is used to specify a CSS class that will be applied to the NavLink when the link is considered "active" based on the current route.
+
+
+activeClassName="active" so active is the class.

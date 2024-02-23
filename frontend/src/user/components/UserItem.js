@@ -7,6 +7,8 @@ import Card from "../../shared/components/UIElements/Card";
 import "./UserItem.css";
 
 const UserItem = (props) => {
+
+  //  `${props.id}`  basically providing dynamic data from the dummmy data
   return (
     <li className="user-item">
       
