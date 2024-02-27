@@ -39,7 +39,7 @@ const Modal = props => {
             timeout={200}
             classNames="modal"
             >
-                <ModalOverlay {...props}/>>
+                <ModalOverlay {...props}/>
             </CSSTransition>
         </React.Fragment>
     );
