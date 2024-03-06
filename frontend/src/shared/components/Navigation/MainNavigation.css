@@ -34,10 +34,6 @@
   height: 100%;
 }
 
-.main-navigation__mainheader-nav{
-  display: none;
-}
-
 @media (min-width: 768px) {
   .main-navigation__menu-btn {
     display: none;
@@ -46,12 +42,4 @@
   .main-navigation__header-nav {
     display: block;
   }
-
-  .main-navigation__mainheader-nav{
-    display: block;
-  }
-
- 
 }
-
-
