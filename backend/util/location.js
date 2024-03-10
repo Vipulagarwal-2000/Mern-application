@@ -1,5 +1,3 @@
-///this module need a fixed as it depends on goolgle map api
-
 const axios = require('axios');
 
 const HttpError = require('../models/http-error');
